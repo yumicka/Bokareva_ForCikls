@@ -1,0 +1,14 @@
+1) Kādam darbībam tiek izmantots cikls ciklā?
+	+ Divdimensiju masīva aizpildīšana ar elementiem.
+	+ Bubble sort veikšana
+	- Lai izveidotu masīvu
+	+ Lai attēlotu visus divdimensiju masīva elementus.
+2) Kas ir “for” cikls?
+3)
+4)
+5)
+6)
+7)
+8)
+9)
+10)
