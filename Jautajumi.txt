@@ -1,11 +1,20 @@
-1) Kādam darbībam tiek izmantots cikls ciklā?
-	+ Divdimensiju masīva aizpildīšana ar elementiem.
-	+ Bubble sort veikšana
-	- Lai izveidotu masīvu
-	+ Lai attēlotu visus divdimensiju masīva elementus.
+1) Kad tiek izmantots for cikls?
+	+ Kad nepieciešams aizpildīt masīvu ar elementiem.
+	+ Lai realizētu šķirošanas algoritmus.
+	- Ja nav zināms, cik reizes darbība tiks veikta.
+	/Lai izveidot masīvu.
+	+ Lai attēlotu visus masīva elementus.
 2) Kas ir “for” cikls?
-3)
-4)
+	- Tā ir cikls, kurā darbība tiek atkārtota noteiktu reižu skaitu.
+	- Tā ir sazarojums, kas pārbauda vērtību un atkarībā no tās veic kādu darbību.
+	- Šī ir cikls, kas pati sevi atjaunina pēc katras darbības izpildes, jānorāda izpildes reižu skaits.
+	- Tas ir koda bloks, kas veic darbību, kamēr dotais nosacījums ir true.
+3) Kuros variantos for cikla sintakse ir uzrakstīta NEpareizi?
+	- for{i=0; i<n; i--}
+	- for(i-0; i<n; i--)
+	- for(i=0; i<n; i--)
+	- for(i=0; i-n; i--)
+4) 
 5)
 6)
 7)
