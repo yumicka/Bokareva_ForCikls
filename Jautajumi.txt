@@ -1,23 +1,39 @@
-1) Kad tiek izmantots for cikls?
-	+ Kad nepieciešams aizpildīt masīvu ar elementiem.
-	+ Lai realizētu šķirošanas algoritmus.
-	- Ja nav zināms, cik reizes darbība tiks veikta.
-	/Lai izveidot masīvu.
-	+ Lai attēlotu visus masīva elementus.
-2) Kas ir “for” cikls?
+1) Kas ir “for” cikls?
 	- Tā ir cikls, kurā darbība tiek atkārtota noteiktu reižu skaitu.
 	- Tā ir sazarojums, kas pārbauda vērtību un atkarībā no tās veic kādu darbību.
-	- Šī ir cikls, kas pati sevi atjaunina pēc katras darbības izpildes, jānorāda izpildes reižu skaits.
-	- Tas ir koda bloks, kas veic darbību, kamēr dotais nosacījums ir true.
+	- Tas ir cikls, kuram ir nepieciešama sākuma un beigu vērtība, kā arī pēc katras darbības izpildāms solis.
+	- Tas ir koda bloks, kas veic darbību, līdz brīdim, kad ir izpildīts dotais nosacījums.
+2) Kad tiek izmantots for cikls?
+	+ Lai optimizētu programmu.
+	+ Kad nepieciešams realizēt šķirošanas algoritmus
+	- Kad nav zināms, cik reizes darbība tiks veikta.
+	+ Lai attēlotu visus masīva elementus.
+
 3) Kuros variantos for cikla sintakse ir uzrakstīta NEpareizi?
-	- for{i=0; i<n; i--}
-	- for(i-0; i<n; i--)
-	- for(i=0; i<n; i--)
-	- for(i=0; i-n; i--)
-4) С каким типом данных может работать for-each?
-5) Отметьте все виды фор цикла
-6) Какие элементы появятся на экране, после запуска программы? и там типа фор и шаг +2
-7)
-8)
+	+ for(; ;){}
+	- for(i-0; i<n; i--){}
+	+ for(i=0; i<n; i--){}
+	- for(i=0; i-n; i--){}
+4) Atzīmējiet For cikla veidus:
+	- do-for
+	+ for-each
+	+ for cikls ciklā
+	+ Bezgalīgs for cikls
+5) Ar kādu datu tipu var darboties for-each? 
+	- Integer
+	+ Masīvs
+	+ ArrayList
+	+ LinkedList
+6) Kādi elementi tiek parādīti ekrānā pēc programmas palaišanas?
+	+ 1
+	+ 5
+	+ 9
+	- 13
+7) Kā izveidot bezgalīgu for ciklu? 
+	+ Nenoteikt parametrus
+	+ Mainīgais lielums, kas vienmēr pieaug
+	- Izveidot nosacījumu, kas var kļūt false
+	+ Norādīt konfliktējošus parametrus un/vai darbības.
+8) Kādi operatori ir pieejami darbam ar cikliem?
 9)
 10)
