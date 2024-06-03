@@ -35,5 +35,9 @@
 	- Izveidot nosacījumu, kas var kļūt false
 	+ Norādīt konfliktējošus parametrus un/vai darbības.
 8) Kādi operatori ir pieejami darbam ar cikliem?
-9)
+	- String
+	+ break
+	+ continue
+	+ return 
+9) 
 10)
