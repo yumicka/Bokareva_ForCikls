@@ -39,5 +39,13 @@
 	+ break
 	+ continue
 	+ return 
-9) 
-10)
+9) Kurus operatorus izmanto, lai norādītu For cikla soli?
+	- >
+	+ ++
+	+ +=
+	- <=
+10) Kuras masīva rindas apstrādā cikls ciklā ārējā daļa un cikls ciklā iekšējā daļa?
+	- Ārēja dāļa apstrada masīva kolonnus
+	+ Ārēja dāļa apstrada masīva rindus
+	+ Iekšējā dāļa apstrada masīva kolonnus
+	- Iekšējā dāļa apstrada masīva rindus
