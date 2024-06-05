@@ -51,38 +51,37 @@ public class bokareva_tests extends JFrame {
 		sveiki.setBounds(300, 30, 322, 134);
 		SakumaEkrans.add(sveiki);
 		
-		JLabel lblNewLabel_1 = new JLabel("Tests par tēmu “Cikls ar skaitītāju programmēšanas valoda Java\".");
-		lblNewLabel_1.setForeground(new Color(255, 255, 255));
-		lblNewLabel_1.setVerticalAlignment(SwingConstants.TOP);
-		lblNewLabel_1.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel_1.setFont(new Font("Segoe UI Semibold", Font.PLAIN, 18));
-		lblNewLabel_1.setBounds(92, 141, 553, 36);
-		SakumaEkrans.add(lblNewLabel_1);
+		JLabel teksts1 = new JLabel("Tests par tēmu “Cikls ar skaitītāju programmēšanas valoda Java\".");
+		teksts1.setForeground(new Color(255, 255, 255));
+		teksts1.setVerticalAlignment(SwingConstants.TOP);
+		teksts1.setHorizontalAlignment(SwingConstants.CENTER);
+		teksts1.setFont(new Font("Segoe UI Semibold", Font.PLAIN, 18));
+		teksts1.setBounds(92, 141, 553, 36);
+		SakumaEkrans.add(teksts1);
 		
-		JLabel lblNewLabel_2 = new JLabel("Katram jautājumam jūs varat izvēlēties 2 vai 3 pareizo atbilžu variantus.");
-		lblNewLabel_2.setForeground(new Color(255, 255, 255));
-		lblNewLabel_2.setVerticalAlignment(SwingConstants.TOP);
-		lblNewLabel_2.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel_2.setFont(new Font("Segoe UI Semibold", Font.PLAIN, 18));
-		lblNewLabel_2.setBounds(61, 174, 614, 62);
-		SakumaEkrans.add(lblNewLabel_2);
+		JLabel teksts2 = new JLabel("Katram jautājumam jūs varat izvēlēties 2 vai 3 pareizo atbilžu variantus.");
+		teksts2.setForeground(new Color(255, 255, 255));
+		teksts2.setVerticalAlignment(SwingConstants.TOP);
+		teksts2.setHorizontalAlignment(SwingConstants.CENTER);
+		teksts2.setFont(new Font("Segoe UI Semibold", Font.PLAIN, 18));
+		teksts2.setBounds(62, 163, 614, 62);
+		SakumaEkrans.add(teksts2);
 		
-		JLabel lblNewLabel_3 = new JLabel("Veiksmi!");
-		lblNewLabel_3.setForeground(new Color(255, 255, 255));
-		lblNewLabel_3.setVerticalAlignment(SwingConstants.TOP);
-		lblNewLabel_3.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel_3.setFont(new Font("Segoe UI Semibold", Font.PLAIN, 25));
-		lblNewLabel_3.setBounds(92, 209, 553, 62);
-		SakumaEkrans.add(lblNewLabel_3);
+		JLabel teksts3 = new JLabel("Veiksmi!");
+		teksts3.setForeground(new Color(255, 255, 255));
+		teksts3.setVerticalAlignment(SwingConstants.TOP);
+		teksts3.setHorizontalAlignment(SwingConstants.CENTER);
+		teksts3.setFont(new Font("Segoe UI Semibold", Font.PLAIN, 25));
+		teksts3.setBounds(92, 197, 553, 62);
+		SakumaEkrans.add(teksts3);
 		
-		//uzsākt testu
 		JButton sakt = new JButton("Startēt");		
 		sakt.setForeground(new Color(51, 153, 153));
 		sakt.setFont(new Font("Segoe UI Semibold", Font.PLAIN, 25));
-		sakt.setBounds(273, 281, 171, 56);
-		
+		sakt.setBounds(281, 246, 171, 56);
 		SakumaEkrans.add(sakt);
 		
+		//uzsākt testu
 		sakt.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				setVisible(false);
