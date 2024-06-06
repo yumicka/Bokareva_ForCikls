@@ -1,4 +1,4 @@
-package tests_bokareva;
+/*package tests_bokareva;
 
 import java.awt.Color;
 import java.awt.EventQueue;
@@ -133,3 +133,4 @@ public class jautajums4 extends JFrame {
 	}
 
 }
+*/

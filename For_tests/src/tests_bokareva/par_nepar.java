@@ -1,17 +1,18 @@
 package tests_bokareva;
 
+import java.awt.Color;
 import java.awt.EventQueue;
-
-import javax.swing.JFrame;
-import javax.swing.JPanel;
-import javax.swing.border.EmptyBorder;
-import javax.swing.JLabel;
-import javax.swing.ImageIcon;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.awt.Color;
+import java.util.ArrayList;
+
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
 
 public class par_nepar extends JFrame {
 	private static final long serialVersionUID = 1L;
@@ -77,11 +78,17 @@ public class par_nepar extends JFrame {
 						jautajums1.Jautajums2();
 						break;
 					case 3:
-						jautajums3.Jautajums3();
+						String nosaukums3 = ((Jautajums)bokareva_tests.jautajumiki.get(0)).getNosaukums();
+						ArrayList<String> varianti3 = ((Jautajums)bokareva_tests.jautajumiki.get(0)).getVarianti();
+						ArrayList<Boolean> atbildes3 = ((Jautajums)bokareva_tests.jautajumiki.get(0)).getAtbildes();
+						Metode.Jautajums(nosaukums3, varianti3, atbildes3);
 						break;
 						
 					case 4:
-						jautajums4.Jautajums4();
+						String nosaukums4 = ((Jautajums)bokareva_tests.jautajumiki.get(1)).getNosaukums();
+						ArrayList<String> varianti4 = ((Jautajums)bokareva_tests.jautajumiki.get(1)).getVarianti();
+						ArrayList<Boolean> atbildes4 = ((Jautajums)bokareva_tests.jautajumiki.get(1)).getAtbildes();
+						Metode.Jautajums(nosaukums4, varianti4, atbildes4);
 						break;
 						
 					case 5:
@@ -135,13 +142,18 @@ public class par_nepar extends JFrame {
 					case 2:
 						jautajums1.Jautajums2();
 						break;
-						
 					case 3:
-						jautajums3.Jautajums3();
+						String nosaukums3 = ((Jautajums)bokareva_tests.jautajumiki.get(0)).getNosaukums();
+						ArrayList<String> varianti3 = ((Jautajums)bokareva_tests.jautajumiki.get(0)).getVarianti();
+						ArrayList<Boolean> atbildes3 = ((Jautajums)bokareva_tests.jautajumiki.get(0)).getAtbildes();
+						Metode.Jautajums(nosaukums3, varianti3, atbildes3);
 						break;
 						
 					case 4:
-						jautajums4.Jautajums4();
+						String nosaukums4 = ((Jautajums)bokareva_tests.jautajumiki.get(1)).getNosaukums();
+						ArrayList<String> varianti4 = ((Jautajums)bokareva_tests.jautajumiki.get(1)).getVarianti();
+						ArrayList<Boolean> atbildes4 = ((Jautajums)bokareva_tests.jautajumiki.get(1)).getAtbildes();
+						Metode.Jautajums(nosaukums4, varianti4, atbildes4);
 						break;
 						
 					case 5:

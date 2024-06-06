@@ -1,4 +1,4 @@
-package tests_bokareva;
+/*package tests_bokareva;
 
 import java.awt.EventQueue;
 
@@ -142,7 +142,7 @@ public class jautajums3 extends JFrame {
 		background.setIcon(new ImageIcon("C:\\Users\\nikag\\OneDrive\\Рабочий стол\\Eksamens_Bokareva\\For_tests\\bildes\\back.jpg"));
 		background.setBounds(0, 0, 716, 443);
 		jautajums3.add(background);
-		*/
+		
 	}
 
-}
+}*/

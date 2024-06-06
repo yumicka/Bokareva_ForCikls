@@ -21,10 +21,6 @@ public class Metode extends JFrame {
 	private static final long serialVersionUID = 1L;
 	
 	private JPanel jautajumuLogs;
-
-	/**
-	 * Launch the application.
-	 */
 	public static void Jautajums(String jautajums, ArrayList<String> varianti, ArrayList<Boolean> atbildes) {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
@@ -38,9 +34,6 @@ public class Metode extends JFrame {
 		});
 	}
 
-	/**
-	 * Create the frame.
-	 */
 	public Metode(String jautajums, ArrayList<String> varianti, ArrayList<Boolean> atbildes) {
 		setTitle("Tests par For ciklu");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -77,7 +70,7 @@ public class Metode extends JFrame {
 		atb3.setBounds(77, 242, 329, 35);
 		jautajumuLogs.add(atb3);
 		
-		JCheckBox atb4 = new JCheckBox(varianti.get(0));
+		JCheckBox atb4 = new JCheckBox(varianti.get(3));
 		atb4.setForeground(new Color(0, 0, 0));
 		atb4.setOpaque(false);
 		atb4.setFont(new Font("Segoe UI Semibold", Font.PLAIN, 20));

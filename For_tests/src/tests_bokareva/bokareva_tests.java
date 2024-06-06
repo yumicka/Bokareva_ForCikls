@@ -25,7 +25,13 @@ public class bokareva_tests extends JFrame {
 	public static int punkti = 0;
 	private JPanel SakumaEkrans;
 	public static int jautNum = 1;
+	public static ArrayList<Object> jautajumiki = new ArrayList<Object>();
 
+
+	
+	
+	
+	
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
@@ -37,9 +43,44 @@ public class bokareva_tests extends JFrame {
 				}
 			}
 		});
-	}
-	
-	
+		
+		//nokaukumi
+		String nosaukums3 = "3) Kuros variantos for cikla sintakse ir uzrakstīta NEpareizi?";
+		String nosaukums4 = "4) Atzīmējiet For cikla veidus:";
+		
+		
+		//atbildes
+		ArrayList<String> varianti3 = new ArrayList<String>();
+		varianti3.add("1) for(; ;){}");
+		varianti3.add("2) for(i-0; i<n; i--){}");
+		varianti3.add("3) for(i=0; i<n; i--){}");
+		varianti3.add("4) for(i=0; i-n; i--){}");
+		
+		ArrayList<String> varianti4 = new ArrayList<String>();
+		varianti4.add("1) do-for");
+		varianti4.add("2) for-each");
+		varianti4.add("3) for cikls ciklā");
+		varianti4.add("4) Bezgalīgs for cikls");
+		
+		//true-false
+		ArrayList<Boolean> pareizi3 = new ArrayList<Boolean>();
+		pareizi3.add(true);
+		pareizi3.add(false);
+		pareizi3.add(true);
+		pareizi3.add(false);
+		
+		ArrayList<Boolean> pareizi4 = new ArrayList<Boolean>();
+		pareizi4.add(false);
+		pareizi4.add(true);
+		pareizi4.add(true);
+		pareizi4.add(true);
+		
+		//objekti
+		jautajumiki.add(new Jautajums(nosaukums3, varianti3, pareizi3));
+		jautajumiki.add(new Jautajums(nosaukums4, varianti4, pareizi4));
+		}
+		
+
 	
 	
 	public bokareva_tests() {

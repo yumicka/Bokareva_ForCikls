@@ -21,6 +21,9 @@ public class jautajumi extends JFrame {
 	private JPanel jautajums;
 	static boolean rezult = false;
 	
+	
+	//nosaukumi
+	
 	 public static boolean setRezult(boolean vert) {
 			rezult = vert;
 			return rezult;
@@ -32,6 +35,7 @@ public class jautajumi extends JFrame {
 	
 	
 	public jautajumi() {
+		
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 720, 480);
 		jautajums = new JPanel();
