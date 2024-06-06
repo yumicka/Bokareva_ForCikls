@@ -12,41 +12,74 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.SwingConstants;
 import javax.swing.border.EmptyBorder;
+import javax.swing.JButton;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 public class jautajumi extends JFrame {
 	private JPanel jautajums;
+	private int jautNum = 1;
 	private int punkti = 0;
 	private ArrayList<Integer> nepar = new ArrayList<Integer>(); 
-
+	static boolean rezult = false;
+	
+	 public static boolean setRezult(boolean vert) {
+			rezult = vert;
+			return rezult;
+		}
+		
+		public static boolean getRezult() {
+			return setRezult(rezult);
+		}
+	
+	
 	public jautajumi() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 720, 480);
 		jautajums = new JPanel();
 		jautajums.setBorder(new EmptyBorder(5, 5, 5, 5));
-
 		setContentPane(jautajums);
 		jautajums.setLayout(null);
+		
+		switch(jautNum) {
+		case 1:
+			JCheckBox pirmais = new JCheckBox("1) Tā ir cikls, kurā darbība tiek atkārtota noteiktu reižu skaitu");
+			JCheckBox otrais = new JCheckBox("2) Tā ir sazarojums, kas pārbauda vērtību un atkarībā no tās veic kādu darbību.");
+			JCheckBox tresais = new JCheckBox("3) Tas ir cikls, kuram ir nepieciešama sākuma un beigu vērtība, kā arī pēc");
+			JCheckBox ceturtais = new JCheckBox("4) Tas ir koda bloks, kas veic darbību, līdz brīdim, kad ir izpildīts dotais nosacījums.");
 			
-		JLabel jautaj1 = new JLabel("1. Kas ir “for” cikls?");
-		jautaj1.setForeground(new Color(255, 255, 255));
-		jautaj1.setFont(new Font("Segoe UI Semibold", Font.PLAIN, 25));
-		jautaj1.setBounds(263, 111, 271, 27);
-		jautajums.add(jautaj1);
-		
-		JCheckBox pirmais = new JCheckBox("1) Tā ir cikls, kurā darbība tiek atkārtota noteiktu reižu skaitu");
-		JCheckBox otrais = new JCheckBox("2) Tā ir sazarojums, kas pārbauda vērtību un atkarībā no tās veic kādu darbību.");
-		JCheckBox tresais = new JCheckBox("3) Tas ir cikls, kuram ir nepieciešama sākuma un beigu vērtība, kā arī pēc");
-		JCheckBox ceturtais = new JCheckBox("4) Tas ir koda bloks, kas veic darbību, līdz brīdim, kad ir izpildīts dotais nosacījums.");
-		
-		ArrayList<JCheckBox> atbildes = new ArrayList<JCheckBox>();
-		atbildes.add(pirmais);
-		atbildes.add(otrais);
-		atbildes.add(tresais);
-		atbildes.add(ceturtais);
-		
-		int y = 173;
-		for(int i = 0; i<atbildes.size(); i++) {
-			if(atbildes.get(i).equals(tresais)) {
+			ArrayList<JCheckBox> atbildes = new ArrayList<JCheckBox>();
+			atbildes.add(pirmais);
+			atbildes.add(otrais);
+			atbildes.add(tresais);
+			atbildes.add(ceturtais);
+			
+			int y = 173;
+			for(int i = 0; i<atbildes.size(); i++) {
+				if(atbildes.get(i).equals(tresais)) {
+					JCheckBox vertiba = atbildes.get(i);
+					vertiba.setForeground(Color.BLACK);
+					vertiba.setFont(new Font("Segoe UI Semibold", Font.PLAIN, 18));
+					vertiba.setOpaque(false);
+					vertiba.setHorizontalAlignment(SwingConstants.LEFT);
+					vertiba.setBounds(25, y, 627, 21);
+					jautajums.add(vertiba);
+					JLabel turpinajums = new JLabel("katras darbības izpildāms solis.");
+					turpinajums.setForeground(Color.BLACK);
+					turpinajums.setFont(new Font("Segoe UI Semibold", Font.PLAIN, 18));
+					turpinajums.setBounds(67, y+20, 271, 27);
+					jautajums.add(turpinajums);
+					y += 40;
+					
+				}else if(atbildes.get(i).equals(ceturtais)) {
+					JCheckBox vertiba = atbildes.get(i);
+					vertiba.setForeground(Color.BLACK);
+					vertiba.setFont(new Font("Segoe UI Semibold", Font.PLAIN, 17));
+					vertiba.setOpaque(false);
+					ceturtais.setBounds(25, 310, 715, 21);
+					jautajums.add(vertiba);
+					y += 40;
+				}else {
 				JCheckBox vertiba = atbildes.get(i);
 				vertiba.setForeground(Color.BLACK);
 				vertiba.setFont(new Font("Segoe UI Semibold", Font.PLAIN, 18));
@@ -54,34 +87,77 @@ public class jautajumi extends JFrame {
 				vertiba.setHorizontalAlignment(SwingConstants.LEFT);
 				vertiba.setBounds(25, y, 627, 21);
 				jautajums.add(vertiba);
-				JLabel turpinajums = new JLabel("katras darbības izpildāms solis.");
-				turpinajums.setForeground(Color.BLACK);
-				turpinajums.setFont(new Font("Segoe UI Semibold", Font.PLAIN, 18));
-				turpinajums.setBounds(67, y+20, 271, 27);
-				jautajums.add(turpinajums);
-				y += 40;
-				
-			}else if(atbildes.get(i).equals(ceturtais)) {
-				JCheckBox vertiba = atbildes.get(i);
-				vertiba.setForeground(Color.BLACK);
-				vertiba.setFont(new Font("Segoe UI Semibold", Font.PLAIN, 17));
-				vertiba.setOpaque(false);
-				ceturtais.setBounds(25, 310, 715, 21);
-				jautajums.add(vertiba);
-				y += 40;
-			}else {
-			JCheckBox vertiba = atbildes.get(i);
-			vertiba.setForeground(Color.BLACK);
-			vertiba.setFont(new Font("Segoe UI Semibold", Font.PLAIN, 18));
-			vertiba.setOpaque(false);
-			vertiba.setHorizontalAlignment(SwingConstants.LEFT);
-			vertiba.setBounds(25, y, 627, 21);
-			jautajums.add(vertiba);
-			y+=40;
+				y+=40;
+				}
 			}
+			
+			JButton atb1 = new JButton("Atbildēt");
+			atb1.addActionListener(new ActionListener() {
+				public void actionPerformed(ActionEvent e) {
+					if(pirmais.isSelected()) {
+						atbildes.add(true);
+					}else {
+						atbildes.add(false);
+					}
+					
+					if(otrais.isSelected()) {
+						atbildes.add(true);
+					}else {
+						atbildes.add(false);
+					}
+					
+					if(tresais.isSelected()) {
+						atbildes.add(true);
+					}else {
+						atbildes.add(false);
+					}
+					
+					if(ceturtais.isSelected()) {
+						atbildes.add(true);
+					}else {
+						atbildes.add(false);
+					}
+					
+					if(atbildes.get(0) && atbildes.get(2) == true) {
+						setVisible(false);
+						setRezult(true);
+						par_nepar.Pareizais();
+						punkti += 2;
+			
+					}else {
+						setVisible(false);
+						setRezult(false);
+						par_nepar.Pareizais();
+						if(punkti != 0)
+							punkti-=1;
+						else
+							punkti=0;
+					}
+					
+				}
+			});
+			
+			atb1.setForeground(new Color(0, 128, 128));
+			atb1.setFont(new Font("Segoe UI Semibold", Font.PLAIN, 20));
+			atb1.setBounds(299, 338, 158, 41);
+			jautajums.add(atb1);
+			
+			JLabel fons = new JLabel("");
+			fons.setIcon(new ImageIcon("C:\\Users\\nikag\\OneDrive\\Рабочий стол\\Eksamens_Bokareva\\For_tests\\bildes\\back.jpg"));
+			fons.setBounds(-3, 0, 787, 466);
+			jautajums.add(fons);
 		}
+		/*
+		JLabel jautaj1 = new JLabel("1. Kas ir “for” cikls?");
+		jautaj1.setForeground(new Color(255, 255, 255));
+		jautaj1.setFont(new Font("Segoe UI Semibold", Font.PLAIN, 25));
+		jautaj1.setBounds(263, 111, 271, 27);
+		jautajums.add(jautaj1);
 		
-		/*JCheckBox pirmais = new JCheckBox("1) Tā ir cikls, kurā darbība tiek atkārtota noteiktu reižu skaitu");
+			
+		ArrayList <Boolean> atbildes = new ArrayList<>();
+		
+		JCheckBox pirmais = new JCheckBox("1) Tā ir cikls, kurā darbība tiek atkārtota noteiktu reižu skaitu");
 		pirmais.setForeground(Color.BLACK);
 		pirmais.setFont(new Font("Segoe UI Semibold", Font.PLAIN, 18));
 		pirmais.setOpaque(false);
@@ -118,15 +194,12 @@ public class jautajumi extends JFrame {
 		ceturtais.setFont(new Font("Segoe UI Semibold", Font.PLAIN, 17));
 		ceturtais.setOpaque(false);
 		ceturtais.setBounds(25, 287, 715, 21);
-		jautajums.add(ceturtais);*/
+		jautajums.add(ceturtais);
+		*/
 		
-		JLabel fons = new JLabel("");
-		fons.setIcon(new ImageIcon("C:\\Users\\nikag\\OneDrive\\Рабочий стол\\Eksamens_Bokareva\\For_tests\\bildes\\back.jpg"));
-		fons.setBounds(-3, 0, 787, 466);
-		jautajums.add(fons);
-	
+		
 	}
-	 public static void Jautajums1() {
+	 public static void Jautajums() {
 	        EventQueue.invokeLater(new Runnable() {
 	            public void run() {
 	                try {
@@ -138,4 +211,7 @@ public class jautajumi extends JFrame {
 	            }
 	        });
 	 }
+	
+
+
 }

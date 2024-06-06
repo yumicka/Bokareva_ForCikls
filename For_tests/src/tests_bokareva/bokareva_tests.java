@@ -85,16 +85,16 @@ public class bokareva_tests extends JFrame {
 		sakt.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				setVisible(false);
-				jautajumi.Jautajums1();
+				jautajumi.Jautajums();
 			}
 		});
 		
 		
-		JLabel lblNewLabel = new JLabel("");
-		lblNewLabel.setBackground(new Color(153, 180, 209));
-		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\nikag\\OneDrive\\Рабочий стол\\Eksamens_Bokareva\\For_tests\\bildes\\back.jpg"));
-		lblNewLabel.setBounds(0, -12, 706, 466);
-		SakumaEkrans.add(lblNewLabel);
+		JLabel background = new JLabel("");
+		background.setBackground(new Color(153, 180, 209));
+		background.setIcon(new ImageIcon("C:\\Users\\nikag\\OneDrive\\Рабочий стол\\Eksamens_Bokareva\\For_tests\\bildes\\back.jpg"));
+		background.setBounds(0, -12, 706, 466);
+		SakumaEkrans.add(background);
 		
 			
 	}
