@@ -15,12 +15,15 @@ import javax.swing.JTextArea;
 import javax.swing.JTextPane;
 import java.awt.SystemColor;
 import java.awt.event.ActionListener;
+import java.util.ArrayList;
 import java.awt.event.ActionEvent;
 
-public class bokareva_tests extends JFrame {
 
+public class bokareva_tests extends JFrame {
+	public static ArrayList<Integer> nepar = new ArrayList<>();
+	public static int punkti = 0;
 	private JPanel SakumaEkrans;
-	//private jautajumi frameJautajumi = new jautajumi();
+	public static int jautNum = 1;
 
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
@@ -85,7 +88,7 @@ public class bokareva_tests extends JFrame {
 		sakt.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				setVisible(false);
-				jautajumi.Jautajums();
+				jautajumi.Jautajums1();
 			}
 		});
 		

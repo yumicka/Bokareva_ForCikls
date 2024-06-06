@@ -8,6 +8,8 @@ import javax.swing.border.EmptyBorder;
 import javax.swing.JLabel;
 import javax.swing.ImageIcon;
 import java.awt.Font;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.awt.Color;
 import java.awt.Canvas;
 import javax.swing.JButton;
@@ -62,6 +64,24 @@ public class par_nepar extends JFrame {
 			OkPoga.setBounds(311, 302, 113, 41);
 			ekrans.add(OkPoga);
 			
+			OkPoga.addActionListener(new ActionListener() {
+				public void actionPerformed(ActionEvent e) {
+					if(bokareva_tests.jautNum <= 10) {
+					bokareva_tests.jautNum++;
+					ekrans.setVisible(false);
+					switch(bokareva_tests.jautNum) {
+					case 1:
+						jautajumi.Jautajums1();
+						break;
+						
+					case 2:
+						jautajums1.Jautajums2();
+						break;
+					}
+					}
+				}
+			});
+
 			JLabel background = new JLabel("");
 			background.setIcon(new ImageIcon("C:\\Users\\nikag\\OneDrive\\Рабочий стол\\Eksamens_Bokareva\\For_tests\\bildes\\back.jpg"));
 			background.setBounds(0, 0, 716, 443);
@@ -91,6 +111,23 @@ public class par_nepar extends JFrame {
 			OkPoga.setFont(new Font("Segoe UI Symbol", Font.PLAIN, 20));
 			OkPoga.setBounds(311, 302, 113, 41);
 			ekrans.add(OkPoga);
+			OkPoga.addActionListener(new ActionListener() {
+				public void actionPerformed(ActionEvent e) {
+					if(bokareva_tests.jautNum <= 10) {
+					bokareva_tests.jautNum++;
+					ekrans.setVisible(false);
+					switch(bokareva_tests.jautNum) {
+					case 1:
+						jautajumi.Jautajums1();
+						break;
+						
+					case 2:
+						jautajums1.Jautajums2();
+						break;
+					}
+					}
+				}
+			});
 			
 			JLabel background = new JLabel("");
 			background.setIcon(new ImageIcon("C:\\Users\\nikag\\OneDrive\\Рабочий стол\\Eksamens_Bokareva\\For_tests\\bildes\\back.jpg"));
