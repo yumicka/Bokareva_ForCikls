@@ -33,7 +33,19 @@ public class jautajums3 extends JFrame {
 	}
 
 	public jautajums3() {
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		String nosaukums = "3) Kuros variantos for cikla sintakse ir uzrakstīta NEpareizi?";
+		ArrayList<String> varianti = new ArrayList<String>();
+		varianti.add("1) for(; ;){}");
+		varianti.add("2) for(i-0; i<n; i--){}");
+		varianti.add("3) for(i=0; i<n; i--){}");
+		varianti.add("4) for(i=0; i-n; i--){}");
+		ArrayList<Boolean> pareizi = new ArrayList<Boolean>();
+		pareizi.add(true);
+		pareizi.add(false);
+		pareizi.add(true);
+		pareizi.add(false);
+		Metode.Jautajums(nosaukums, varianti, pareizi);
+		/*setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 720, 480);
 		jautajums3 = new JPanel();
 		jautajums3.setBorder(new EmptyBorder(5, 5, 5, 5));
@@ -130,7 +142,7 @@ public class jautajums3 extends JFrame {
 		background.setIcon(new ImageIcon("C:\\Users\\nikag\\OneDrive\\Рабочий стол\\Eksamens_Bokareva\\For_tests\\bildes\\back.jpg"));
 		background.setBounds(0, 0, 716, 443);
 		jautajums3.add(background);
-		
+		*/
 	}
 
 }
