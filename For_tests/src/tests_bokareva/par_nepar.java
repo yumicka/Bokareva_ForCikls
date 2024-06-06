@@ -124,6 +124,10 @@ public class par_nepar extends JFrame {
 					case 2:
 						jautajums1.Jautajums2();
 						break;
+						
+					case 3:
+						jautajums3.Jautajums3();
+						break;
 					}
 					}
 				}

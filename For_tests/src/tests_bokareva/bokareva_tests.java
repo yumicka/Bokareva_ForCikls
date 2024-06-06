@@ -37,7 +37,10 @@ public class bokareva_tests extends JFrame {
 			}
 		});
 	}
-
+	
+	
+	
+	
 	public bokareva_tests() {
 		setTitle("Tests par For ciklu");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
