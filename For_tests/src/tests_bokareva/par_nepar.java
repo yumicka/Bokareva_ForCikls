@@ -68,7 +68,7 @@ public class par_nepar extends JFrame {
 				public void actionPerformed(ActionEvent e) {
 					if(bokareva_tests.jautNum <= 10) {
 					bokareva_tests.jautNum++;
-					ekrans.setVisible(false);
+					setVisible(false);
 					switch(bokareva_tests.jautNum) {
 					case 1:
 						jautajumi.Jautajums1();
@@ -113,9 +113,10 @@ public class par_nepar extends JFrame {
 			ekrans.add(OkPoga);
 			OkPoga.addActionListener(new ActionListener() {
 				public void actionPerformed(ActionEvent e) {
+					setVisible(false);
 					if(bokareva_tests.jautNum <= 10) {
 					bokareva_tests.jautNum++;
-					ekrans.setVisible(false);
+					System.out.print(bokareva_tests.jautNum);
 					switch(bokareva_tests.jautNum) {
 					case 1:
 						jautajumi.Jautajums1();
@@ -127,6 +128,10 @@ public class par_nepar extends JFrame {
 						
 					case 3:
 						jautajums3.Jautajums3();
+						break;
+						
+					case 4:
+						jautajums4.Jautajums4();
 						break;
 					}
 					}
