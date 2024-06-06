@@ -8,16 +8,15 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 
-public class jautajumi6 extends JFrame {
+public class jautajums6 extends JFrame {
 
 	private static final long serialVersionUID = 1L;
 	private JPanel jautajums6;
-
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					jautajumi6 frame = new jautajumi6();
+					jautajums6 frame = new jautajums6();
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -26,7 +25,9 @@ public class jautajumi6 extends JFrame {
 		});
 	}
 
-	public jautajumi6() {
+
+	public jautajums6() {
+		setTitle("Tests par For ciklu");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 720, 480);
 		jautajums6 = new JPanel();
@@ -34,10 +35,11 @@ public class jautajumi6 extends JFrame {
 		setContentPane(jautajums6);
 		jautajums6.setLayout(null);
 		
+		//...
 		
 		JLabel background = new JLabel("");
 		background.setIcon(new ImageIcon("C:\\Users\\nikag\\OneDrive\\Рабочий стол\\Eksamens_Bokareva\\For_tests\\bildes\\back.jpg"));
-		background.setBounds(0, 0, 719, 456);
+		background.setBounds(-228, -16, 1200, 810);
 		jautajums6.add(background);
 	}
 

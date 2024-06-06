@@ -92,7 +92,34 @@ public class par_nepar extends JFrame {
 						break;
 						
 					case 5:
-						jautajumi5.Jautajums5();
+						String nosaukums5 = ((Jautajums)bokareva_tests.jautajumiki.get(2)).getNosaukums();
+						ArrayList<String> varianti5 = ((Jautajums)bokareva_tests.jautajumiki.get(2)).getVarianti();
+						ArrayList<Boolean> atbildes5 = ((Jautajums)bokareva_tests.jautajumiki.get(2)).getAtbildes();
+						Metode.Jautajums(nosaukums5, varianti5, atbildes5);
+						break;
+						
+					case 6:
+						break;
+						
+					case 7:
+						String nosaukums7 = ((Jautajums)bokareva_tests.jautajumiki.get(3)).getNosaukums();
+						ArrayList<String> varianti7 = ((Jautajums)bokareva_tests.jautajumiki.get(3)).getVarianti();
+						ArrayList<Boolean> atbildes7 = ((Jautajums)bokareva_tests.jautajumiki.get(3)).getAtbildes();
+						Metode.Jautajums(nosaukums7, varianti7, atbildes7);
+						break;
+						
+					case 8:
+						String nosaukums8 = ((Jautajums)bokareva_tests.jautajumiki.get(4)).getNosaukums();
+						ArrayList<String> varianti8 = ((Jautajums)bokareva_tests.jautajumiki.get(4)).getVarianti();
+						ArrayList<Boolean> atbildes8 = ((Jautajums)bokareva_tests.jautajumiki.get(4)).getAtbildes();
+						Metode.Jautajums(nosaukums8, varianti8, atbildes8);
+						break;
+						
+					case 9:
+						String nosaukums9 = ((Jautajums)bokareva_tests.jautajumiki.get(4)).getNosaukums();
+						ArrayList<String> varianti9 = ((Jautajums)bokareva_tests.jautajumiki.get(4)).getVarianti();
+						ArrayList<Boolean> atbildes9 = ((Jautajums)bokareva_tests.jautajumiki.get(4)).getAtbildes();
+						Metode.Jautajums(nosaukums9, varianti9, atbildes9);
 						break;
 					}
 					}
@@ -157,7 +184,10 @@ public class par_nepar extends JFrame {
 						break;
 						
 					case 5:
-						jautajumi5.Jautajums5();
+						String nosaukums5 = ((Jautajums)bokareva_tests.jautajumiki.get(2)).getNosaukums();
+						ArrayList<String> varianti5 = ((Jautajums)bokareva_tests.jautajumiki.get(2)).getVarianti();
+						ArrayList<Boolean> atbildes5 = ((Jautajums)bokareva_tests.jautajumiki.get(2)).getAtbildes();
+						Metode.Jautajums(nosaukums5, varianti5, atbildes5);
 						break;
 					}
 					}

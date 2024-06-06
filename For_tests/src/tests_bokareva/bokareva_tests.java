@@ -47,6 +47,10 @@ public class bokareva_tests extends JFrame {
 		//nokaukumi
 		String nosaukums3 = "3) Kuros variantos for cikla sintakse ir uzrakstīta NEpareizi?";
 		String nosaukums4 = "4) Atzīmējiet For cikla veidus:";
+		String nosaukums5 = "5) Ar kādu datu tipu var darboties for-each?";
+		String nosaukums7 = "7) Kā izveidot bezgalīgu for ciklu?";
+		String nosaukums8 = "8) Kādi operatori ir pieejami darbam ar cikliem?";
+		String nosaukums9 = "9) Kurus operatorus izmanto, lai norādītu For cikla soli?";
 		
 		
 		//atbildes
@@ -62,6 +66,31 @@ public class bokareva_tests extends JFrame {
 		varianti4.add("3) for cikls ciklā");
 		varianti4.add("4) Bezgalīgs for cikls");
 		
+		ArrayList<String> varianti5 = new ArrayList<String>();
+		varianti5.add("1) Integer");
+		varianti5.add("2) Masīvs");
+		varianti5.add("3) ArrayList");
+		varianti5.add("4) LinkedList");
+		
+		ArrayList<String> varianti7 = new ArrayList<String>();
+		varianti7.add("1) Nenoteikt parametrus");
+		varianti7.add("2) Mainīgais lielums, kas vienmēr pieaug");
+		varianti7.add("3) Izveidot nosacījumu, kas var kļūt false");
+		varianti7.add("4) Norādīt konfliktējošus parametrus un/vai darbības");
+		
+		ArrayList<String> varianti8 = new ArrayList<String>();
+		varianti8.add("1) String");
+		varianti8.add("2) break");
+		varianti8.add("3) continue");
+		varianti8.add("4) return");
+		
+		ArrayList<String> varianti9 = new ArrayList<String>();
+		varianti9.add("1) >");
+		varianti9.add("2) ++");
+		varianti9.add("3) +=");
+		varianti9.add("4) <=");
+		
+		
 		//true-false
 		ArrayList<Boolean> pareizi3 = new ArrayList<Boolean>();
 		pareizi3.add(true);
@@ -75,9 +104,37 @@ public class bokareva_tests extends JFrame {
 		pareizi4.add(true);
 		pareizi4.add(true);
 		
+		ArrayList<Boolean> pareizi5 = new ArrayList<Boolean>();
+		pareizi5.add(false);
+		pareizi5.add(true);
+		pareizi5.add(true);
+		pareizi5.add(true);
+		
+		ArrayList<Boolean> pareizi7 = new ArrayList<Boolean>();
+		pareizi7.add(true);
+		pareizi7.add(true);
+		pareizi7.add(false);
+		pareizi7.add(true);
+		
+		ArrayList<Boolean> pareizi8 = new ArrayList<Boolean>();
+		pareizi8.add(false);
+		pareizi8.add(true);
+		pareizi8.add(true);
+		pareizi8.add(true);
+		
+		ArrayList<Boolean> pareizi9 = new ArrayList<Boolean>();
+		pareizi9.add(false);
+		pareizi9.add(true);
+		pareizi9.add(true);
+		pareizi9.add(false);
+		
 		//objekti
 		jautajumiki.add(new Jautajums(nosaukums3, varianti3, pareizi3));
 		jautajumiki.add(new Jautajums(nosaukums4, varianti4, pareizi4));
+		jautajumiki.add(new Jautajums(nosaukums5, varianti5, pareizi5));
+		jautajumiki.add(new Jautajums(nosaukums7, varianti7, pareizi7));
+		jautajumiki.add(new Jautajums(nosaukums8, varianti8, pareizi8));
+		jautajumiki.add(new Jautajums(nosaukums9, varianti9, pareizi9));
 		}
 		
 
