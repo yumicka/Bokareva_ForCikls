@@ -17,6 +17,7 @@ import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 
 public class jautajumi extends JFrame {
+	private static final long serialVersionUID = 1L;
 	private JPanel jautajums;
 	static boolean rezult = false;
 	
@@ -156,7 +157,4 @@ public class jautajumi extends JFrame {
 	            }
 	        });
 	 }
-	
-
-
 }

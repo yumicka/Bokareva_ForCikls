@@ -11,11 +11,10 @@ import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.Color;
-import java.awt.Canvas;
 import javax.swing.JButton;
 
 public class par_nepar extends JFrame {
-
+	private static final long serialVersionUID = 1L;
 	private JPanel ekrans;
 	public static void Pareizais() {
 		EventQueue.invokeLater(new Runnable() {
@@ -77,6 +76,17 @@ public class par_nepar extends JFrame {
 					case 2:
 						jautajums1.Jautajums2();
 						break;
+					case 3:
+						jautajums3.Jautajums3();
+						break;
+						
+					case 4:
+						jautajums4.Jautajums4();
+						break;
+						
+					case 5:
+						jautajumi5.Jautajums5();
+						break;
 					}
 					}
 				}
@@ -132,6 +142,10 @@ public class par_nepar extends JFrame {
 						
 					case 4:
 						jautajums4.Jautajums4();
+						break;
+						
+					case 5:
+						jautajumi5.Jautajums5();
 						break;
 					}
 					}

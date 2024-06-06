@@ -16,7 +16,7 @@ import java.util.ArrayList;
 import java.awt.Color;
 
 public class jautajums3 extends JFrame {
-
+	private static final long serialVersionUID = 1L;
 	private JPanel jautajums3;
 	
 	public static void Jautajums3() {
