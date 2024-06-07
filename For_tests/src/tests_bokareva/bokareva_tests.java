@@ -11,9 +11,6 @@ import java.awt.Font;
 import javax.swing.JButton;
 import java.awt.Color;
 import javax.swing.SwingConstants;
-import javax.swing.JTextArea;
-import javax.swing.JTextPane;
-import java.awt.SystemColor;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
 import java.awt.event.ActionEvent;
@@ -27,11 +24,6 @@ public class bokareva_tests extends JFrame {
 	public static int jautNum = 1;
 	public static ArrayList<Object> jautajumiki = new ArrayList<Object>();
 
-
-	
-	
-	
-	
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
@@ -45,15 +37,22 @@ public class bokareva_tests extends JFrame {
 		});
 		
 		//nokaukumi
+		String nosaukums2 = "2) Kad tiek izmantots for cikls?";
 		String nosaukums3 = "3) Kuros variantos for cikla sintakse ir uzrakstīta NEpareizi?";
 		String nosaukums4 = "4) Atzīmējiet For cikla veidus:";
 		String nosaukums5 = "5) Ar kādu datu tipu var darboties for-each?";
 		String nosaukums7 = "7) Kā izveidot bezgalīgu for ciklu?";
 		String nosaukums8 = "8) Kādi operatori ir pieejami darbam ar cikliem?";
-		String nosaukums9 = "9) Kurus operatorus izmanto, lai norādītu For cikla soli?";
+		String nosaukums9 = "9) Kurus operatorus izmanto, lai norādītu soli?";
 		
 		
 		//atbildes
+		ArrayList<String> varianti2 = new ArrayList<String>();
+		varianti2.add("1) Lai optimizētu programmu");
+		varianti2.add("2) Kad nepieciešams realizēt šķirošanas algoritmus");
+		varianti2.add("3) Kad nav zināms, cik reizes darbība tiks veikta");
+		varianti2.add("4) Lai attēlotu visus masīva elementus");
+		
 		ArrayList<String> varianti3 = new ArrayList<String>();
 		varianti3.add("1) for(; ;){}");
 		varianti3.add("2) for(i-0; i<n; i--){}");
@@ -92,6 +91,12 @@ public class bokareva_tests extends JFrame {
 		
 		
 		//true-false
+		ArrayList<Boolean> pareizi2 = new ArrayList<Boolean>();
+		pareizi2.add(true);
+		pareizi2.add(true);
+		pareizi2.add(false);
+		pareizi2.add(true);
+		
 		ArrayList<Boolean> pareizi3 = new ArrayList<Boolean>();
 		pareizi3.add(true);
 		pareizi3.add(false);
@@ -129,6 +134,7 @@ public class bokareva_tests extends JFrame {
 		pareizi9.add(false);
 		
 		//objekti
+		jautajumiki.add(new Jautajums(nosaukums2, varianti2, pareizi2));
 		jautajumiki.add(new Jautajums(nosaukums3, varianti3, pareizi3));
 		jautajumiki.add(new Jautajums(nosaukums4, varianti4, pareizi4));
 		jautajumiki.add(new Jautajums(nosaukums5, varianti5, pareizi5));

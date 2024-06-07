@@ -29,6 +29,66 @@ public class par_nepar extends JFrame {
 			}
 		});
 	}
+	
+	public static void turpinat(int jautNum) {
+		switch(bokareva_tests.jautNum) {
+		case 1:
+			jautajumi.Jautajums1();
+			break;
+			
+		case 2:
+			String nosaukums2 = ((Jautajums)bokareva_tests.jautajumiki.get(0)).getNosaukums();
+			ArrayList<String> varianti2 = ((Jautajums)bokareva_tests.jautajumiki.get(0)).getVarianti();
+			ArrayList<Boolean> atbildes2 = ((Jautajums)bokareva_tests.jautajumiki.get(0)).getAtbildes();
+			Metode.Jautajums(nosaukums2, varianti2, atbildes2);
+			break;
+		case 3:
+			String nosaukums3 = ((Jautajums)bokareva_tests.jautajumiki.get(1)).getNosaukums();
+			ArrayList<String> varianti3 = ((Jautajums)bokareva_tests.jautajumiki.get(1)).getVarianti();
+			ArrayList<Boolean> atbildes3 = ((Jautajums)bokareva_tests.jautajumiki.get(1)).getAtbildes();
+			Metode.Jautajums(nosaukums3, varianti3, atbildes3);
+			break;
+			
+		case 4:
+			String nosaukums4 = ((Jautajums)bokareva_tests.jautajumiki.get(2)).getNosaukums();
+			ArrayList<String> varianti4 = ((Jautajums)bokareva_tests.jautajumiki.get(2)).getVarianti();
+			ArrayList<Boolean> atbildes4 = ((Jautajums)bokareva_tests.jautajumiki.get(2)).getAtbildes();
+			Metode.Jautajums(nosaukums4, varianti4, atbildes4);
+			break;
+			
+		case 5:
+			String nosaukums5 = ((Jautajums)bokareva_tests.jautajumiki.get(3)).getNosaukums();
+			ArrayList<String> varianti5 = ((Jautajums)bokareva_tests.jautajumiki.get(3)).getVarianti();
+			ArrayList<Boolean> atbildes5 = ((Jautajums)bokareva_tests.jautajumiki.get(3)).getAtbildes();
+			Metode.Jautajums(nosaukums5, varianti5, atbildes5);
+			break;
+			
+		case 6:
+			jautajums6.Jautajums6();
+			break;
+			
+		case 7:
+			String nosaukums7 = ((Jautajums)bokareva_tests.jautajumiki.get(4)).getNosaukums();
+			ArrayList<String> varianti7 = ((Jautajums)bokareva_tests.jautajumiki.get(4)).getVarianti();
+			ArrayList<Boolean> atbildes7 = ((Jautajums)bokareva_tests.jautajumiki.get(4)).getAtbildes();
+			Metode.Jautajums(nosaukums7, varianti7, atbildes7);
+			break;
+			
+		case 8:
+			String nosaukums8 = ((Jautajums)bokareva_tests.jautajumiki.get(5)).getNosaukums();
+			ArrayList<String> varianti8 = ((Jautajums)bokareva_tests.jautajumiki.get(5)).getVarianti();
+			ArrayList<Boolean> atbildes8 = ((Jautajums)bokareva_tests.jautajumiki.get(5)).getAtbildes();
+			Metode.Jautajums(nosaukums8, varianti8, atbildes8);
+			break;
+			
+		case 9:
+			String nosaukums9 = ((Jautajums)bokareva_tests.jautajumiki.get(6)).getNosaukums();
+			ArrayList<String> varianti9 = ((Jautajums)bokareva_tests.jautajumiki.get(6)).getVarianti();
+			ArrayList<Boolean> atbildes9 = ((Jautajums)bokareva_tests.jautajumiki.get(6)).getAtbildes();
+			Metode.Jautajums(nosaukums9, varianti9, atbildes9);
+			break;
+		}
+	}
 
 	//frame
 	public par_nepar() {
@@ -69,59 +129,7 @@ public class par_nepar extends JFrame {
 					if(bokareva_tests.jautNum <= 10) {
 					bokareva_tests.jautNum++;
 					setVisible(false);
-					switch(bokareva_tests.jautNum) {
-					case 1:
-						jautajumi.Jautajums1();
-						break;
-						
-					case 2:
-						jautajums1.Jautajums2();
-						break;
-					case 3:
-						String nosaukums3 = ((Jautajums)bokareva_tests.jautajumiki.get(0)).getNosaukums();
-						ArrayList<String> varianti3 = ((Jautajums)bokareva_tests.jautajumiki.get(0)).getVarianti();
-						ArrayList<Boolean> atbildes3 = ((Jautajums)bokareva_tests.jautajumiki.get(0)).getAtbildes();
-						Metode.Jautajums(nosaukums3, varianti3, atbildes3);
-						break;
-						
-					case 4:
-						String nosaukums4 = ((Jautajums)bokareva_tests.jautajumiki.get(1)).getNosaukums();
-						ArrayList<String> varianti4 = ((Jautajums)bokareva_tests.jautajumiki.get(1)).getVarianti();
-						ArrayList<Boolean> atbildes4 = ((Jautajums)bokareva_tests.jautajumiki.get(1)).getAtbildes();
-						Metode.Jautajums(nosaukums4, varianti4, atbildes4);
-						break;
-						
-					case 5:
-						String nosaukums5 = ((Jautajums)bokareva_tests.jautajumiki.get(2)).getNosaukums();
-						ArrayList<String> varianti5 = ((Jautajums)bokareva_tests.jautajumiki.get(2)).getVarianti();
-						ArrayList<Boolean> atbildes5 = ((Jautajums)bokareva_tests.jautajumiki.get(2)).getAtbildes();
-						Metode.Jautajums(nosaukums5, varianti5, atbildes5);
-						break;
-						
-					case 6:
-						break;
-						
-					case 7:
-						String nosaukums7 = ((Jautajums)bokareva_tests.jautajumiki.get(3)).getNosaukums();
-						ArrayList<String> varianti7 = ((Jautajums)bokareva_tests.jautajumiki.get(3)).getVarianti();
-						ArrayList<Boolean> atbildes7 = ((Jautajums)bokareva_tests.jautajumiki.get(3)).getAtbildes();
-						Metode.Jautajums(nosaukums7, varianti7, atbildes7);
-						break;
-						
-					case 8:
-						String nosaukums8 = ((Jautajums)bokareva_tests.jautajumiki.get(4)).getNosaukums();
-						ArrayList<String> varianti8 = ((Jautajums)bokareva_tests.jautajumiki.get(4)).getVarianti();
-						ArrayList<Boolean> atbildes8 = ((Jautajums)bokareva_tests.jautajumiki.get(4)).getAtbildes();
-						Metode.Jautajums(nosaukums8, varianti8, atbildes8);
-						break;
-						
-					case 9:
-						String nosaukums9 = ((Jautajums)bokareva_tests.jautajumiki.get(4)).getNosaukums();
-						ArrayList<String> varianti9 = ((Jautajums)bokareva_tests.jautajumiki.get(4)).getVarianti();
-						ArrayList<Boolean> atbildes9 = ((Jautajums)bokareva_tests.jautajumiki.get(4)).getAtbildes();
-						Metode.Jautajums(nosaukums9, varianti9, atbildes9);
-						break;
-					}
+					turpinat(bokareva_tests.jautNum);
 					}
 				}
 			});
@@ -160,36 +168,7 @@ public class par_nepar extends JFrame {
 					setVisible(false);
 					if(bokareva_tests.jautNum <= 10) {
 					bokareva_tests.jautNum++;
-					System.out.print(bokareva_tests.jautNum);
-					switch(bokareva_tests.jautNum) {
-					case 1:
-						jautajumi.Jautajums1();
-						break;
-						
-					case 2:
-						jautajums1.Jautajums2();
-						break;
-					case 3:
-						String nosaukums3 = ((Jautajums)bokareva_tests.jautajumiki.get(0)).getNosaukums();
-						ArrayList<String> varianti3 = ((Jautajums)bokareva_tests.jautajumiki.get(0)).getVarianti();
-						ArrayList<Boolean> atbildes3 = ((Jautajums)bokareva_tests.jautajumiki.get(0)).getAtbildes();
-						Metode.Jautajums(nosaukums3, varianti3, atbildes3);
-						break;
-						
-					case 4:
-						String nosaukums4 = ((Jautajums)bokareva_tests.jautajumiki.get(1)).getNosaukums();
-						ArrayList<String> varianti4 = ((Jautajums)bokareva_tests.jautajumiki.get(1)).getVarianti();
-						ArrayList<Boolean> atbildes4 = ((Jautajums)bokareva_tests.jautajumiki.get(1)).getAtbildes();
-						Metode.Jautajums(nosaukums4, varianti4, atbildes4);
-						break;
-						
-					case 5:
-						String nosaukums5 = ((Jautajums)bokareva_tests.jautajumiki.get(2)).getNosaukums();
-						ArrayList<String> varianti5 = ((Jautajums)bokareva_tests.jautajumiki.get(2)).getVarianti();
-						ArrayList<Boolean> atbildes5 = ((Jautajums)bokareva_tests.jautajumiki.get(2)).getAtbildes();
-						Metode.Jautajums(nosaukums5, varianti5, atbildes5);
-						break;
-					}
+					turpinat(bokareva_tests.jautNum);
 					}
 				}
 			});

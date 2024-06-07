@@ -1,7 +1,7 @@
 1) Kas ir “for” cikls?
-	- Tā ir cikls, kurā darbība tiek atkārtota noteiktu reižu skaitu.
+	+ Tā ir cikls, kurā darbība tiek atkārtota noteiktu reižu skaitu.
 	- Tā ir sazarojums, kas pārbauda vērtību un atkarībā no tās veic kādu darbību.
-	- Tas ir cikls, kuram ir nepieciešama sākuma un beigu vērtība, kā arī pēc katras darbības izpildāms solis.
+	+ Tas ir cikls, kuram ir nepieciešama sākuma un beigu vērtība, kā arī pēc katras darbības izpildāms solis.
 	- Tas ir koda bloks, kas veic darbību, līdz brīdim, kad ir izpildīts dotais nosacījums.
 2) Kad tiek izmantots for cikls?
 	+ Lai optimizētu programmu.

@@ -14,6 +14,7 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
+import javax.swing.SwingConstants;
 
 public class Metode extends JFrame {
 
@@ -44,37 +45,38 @@ public class Metode extends JFrame {
 		jautajumuLogs.setLayout(null);
 		
 		JLabel nosaukums = new JLabel(jautajums);
+		nosaukums.setHorizontalAlignment(SwingConstants.CENTER);
 		nosaukums.setForeground(new Color(255, 255, 255));
 		nosaukums.setFont(new Font("Segoe UI Semibold", Font.PLAIN, 25));
-		nosaukums.setBounds(113, 84, 517, 46);
+		nosaukums.setBounds(10, 84, 686, 46);
 		jautajumuLogs.add(nosaukums);
 		
 		JCheckBox atb1 = new JCheckBox(varianti.get(0));
 		atb1.setForeground(new Color(0, 0, 0));
 		atb1.setOpaque(false);
 		atb1.setFont(new Font("Segoe UI Semibold", Font.PLAIN, 20));
-		atb1.setBounds(77, 168, 329, 35);
+		atb1.setBounds(77, 168, 579, 35);
 		jautajumuLogs.add(atb1);
 		
 		JCheckBox atb2 = new JCheckBox(varianti.get(1));
 		atb2.setForeground(new Color(0, 0, 0));
 		atb2.setOpaque(false);
 		atb2.setFont(new Font("Segoe UI Semibold", Font.PLAIN, 20));
-		atb2.setBounds(77, 205, 329, 35);
+		atb2.setBounds(77, 205, 590, 35);
 		jautajumuLogs.add(atb2);
 		
 		JCheckBox atb3 = new JCheckBox(varianti.get(2));
 		atb3.setForeground(new Color(0, 0, 0));
 		atb3.setOpaque(false);
 		atb3.setFont(new Font("Segoe UI Semibold", Font.PLAIN, 20));
-		atb3.setBounds(77, 242, 329, 35);
+		atb3.setBounds(77, 242, 579, 35);
 		jautajumuLogs.add(atb3);
 		
 		JCheckBox atb4 = new JCheckBox(varianti.get(3));
 		atb4.setForeground(new Color(0, 0, 0));
 		atb4.setOpaque(false);
 		atb4.setFont(new Font("Segoe UI Semibold", Font.PLAIN, 20));
-		atb4.setBounds(77, 279, 329, 35);
+		atb4.setBounds(77, 279, 579, 35);
 		jautajumuLogs.add(atb4);
 		
 		
@@ -131,7 +133,7 @@ public class Metode extends JFrame {
 		
 		JLabel background = new JLabel("");
 		background.setIcon(new ImageIcon("C:\\Users\\nikag\\OneDrive\\Рабочий стол\\Eksamens_Bokareva\\For_tests\\bildes\\back.jpg"));
-		background.setBounds(-228, -16, 1200, 810);
+		background.setBounds(-213, -11, 1200, 810);
 		jautajumuLogs.add(background);
 	}
 
