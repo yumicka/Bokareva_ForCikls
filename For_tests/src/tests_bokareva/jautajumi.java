@@ -129,11 +129,12 @@ public class jautajumi extends JFrame {
 					setVisible(false);
 					setRezult(false);
 					par_nepar.Pareizais();
-					if(bokareva_tests.punkti != 0)
+					if(bokareva_tests.punkti != 0) {
 						bokareva_tests.punkti-=1;
-					else {
+						bokareva_tests.nepar.add(bokareva_tests.jautNum);
+					}else{
 						bokareva_tests.punkti=0;
-						bokareva_tests.nepar.add(1);
+						bokareva_tests.nepar.add(bokareva_tests.jautNum);
 					}
 				}
 				

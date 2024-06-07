@@ -5,11 +5,15 @@ import java.awt.EventQueue;
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 import java.awt.Font;
 import java.awt.Color;
 import javax.swing.SwingConstants;
+import javax.swing.JButton;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 public class rezultats extends JFrame {
 
@@ -62,23 +66,19 @@ public class rezultats extends JFrame {
 		punkti.setBounds(10, 131, 686, 42);
 		rezultats.add(punkti);
 		
-		//nepareizi atbildes
+		if(!bokareva_tests.nepar.isEmpty()) {
 		JLabel jautajumi = new JLabel("Nepareizi atbildēti jautājumi:");
+		jautajumi.setHorizontalAlignment(SwingConstants.CENTER);
 		jautajumi.setForeground(new Color(255, 255, 255));
 		jautajumi.setFont(new Font("Segoe UI Semibold", Font.PLAIN, 22));
-		jautajumi.setBounds(213, 167, 294, 41);
+		jautajumi.setBounds(20, 167, 676, 41);
 		rezultats.add(jautajumi);
 		
 		
 		String str = "";
-		int ped = bokareva_tests.nepar.get(bokareva_tests.nepar.size()-1);
 		for(int i = 0; i<bokareva_tests.nepar.size(); i++) {
-			if(i != ped)
-				str += bokareva_tests.nepar.get(i)+", ";
-			else
-				str += bokareva_tests.nepar.get(i)+".";
+			str += bokareva_tests.nepar.get(i)+". ";
 		}
-		
 		JLabel saraksts = new JLabel(str);
 		saraksts.setBackground(new Color(240, 240, 240));
 		saraksts.setFont(new Font("Segoe UI Semibold", Font.PLAIN, 20));
@@ -86,16 +86,51 @@ public class rezultats extends JFrame {
 		saraksts.setHorizontalAlignment(SwingConstants.CENTER);
 		saraksts.setBounds(10, 204, 686, 42);
 		rezultats.add(saraksts);
-	
+		}else {
+			JLabel izcili = new JLabel("Jūs pareizi atbildējāt uz visiem jautājumiem!");
+			izcili.setHorizontalAlignment(SwingConstants.CENTER);
+			izcili.setForeground(new Color(255, 255, 255));
+			izcili.setFont(new Font("Segoe UI Semibold", Font.PLAIN, 22));
+			izcili.setBounds(20, 193, 676, 41);
+			rezultats.add(izcili);
+		}
+		JButton turpin = new JButton("Turpināt");
+		turpin.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				setVisible(false);
+				bokareva_tests.jautNum = 1;
+				bokareva_tests.punkti = 0;
+				bokareva_tests.nepar.clear();
+				par_nepar.turpinat(bokareva_tests.jautNum);
+			}
+		});
+		turpin.setForeground(new Color(0, 128, 0));
+		turpin.setFont(new Font("Segoe UI Semibold", Font.PLAIN, 20));
+		turpin.setBounds(123, 303, 141, 42);
+		rezultats.add(turpin);
+		
+		JButton beigt = new JButton("Pabeigt");
+		beigt.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				setVisible(false);
+				JOptionPane.showMessageDialog(null, "Uz redzešanos!");
+			}
+		});
+		beigt.setForeground(new Color(178, 34, 34));
+		beigt.setFont(new Font("Segoe UI Semibold", Font.PLAIN, 20));
+		beigt.setBounds(412, 303, 141, 42);
+		rezultats.add(beigt);
+		
+		
 		JLabel background = new JLabel("");
 		background.setIcon(new ImageIcon("C:\\Users\\nikag\\OneDrive\\Рабочий стол\\Eksamens_Bokareva\\For_tests\\bildes\\back.jpg"));
 		background.setBounds(-228, -16, 1200, 810);
 		rezultats.add(background);
+		
 		
 
 		
 		
 		
 	}
-
 }
