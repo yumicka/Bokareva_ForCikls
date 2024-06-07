@@ -135,7 +135,7 @@ public class Metode extends JFrame {
 		jautajumuLogs.add(atb);
 		
 		JLabel background = new JLabel("");
-		background.setIcon(new ImageIcon("C:\\Users\\nikag\\OneDrive\\Рабочий стол\\Eksamens_Bokareva\\For_tests\\bildes\\back.jpg"));
+		background.setIcon(new ImageIcon((getClass().getClassLoader().getResource("back.jpg"))));
 		background.setBounds(-213, -11, 1200, 810);
 		jautajumuLogs.add(background);
 	}

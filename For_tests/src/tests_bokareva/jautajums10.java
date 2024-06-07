@@ -143,7 +143,7 @@ public class jautajums10 extends JFrame {
 	jautajums10.add(pogaAtb);
 	
 	JLabel background = new JLabel("");
-	background.setIcon(new ImageIcon("C:\\Users\\nikag\\OneDrive\\Рабочий стол\\Eksamens_Bokareva\\For_tests\\bildes\\back.jpg"));
+	background.setIcon(new ImageIcon((getClass().getClassLoader().getResource("back.jpg"))));
 	background.setBounds(-228, -16, 1200, 810);
 	jautajums10.add(background);
 	

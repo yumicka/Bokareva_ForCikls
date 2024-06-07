@@ -147,7 +147,7 @@ public class jautajumi extends JFrame {
 		jautajums.add(atb1);
 		
 		JLabel fons = new JLabel("");
-		fons.setIcon(new ImageIcon("C:\\Users\\nikag\\OneDrive\\Рабочий стол\\Eksamens_Bokareva\\For_tests\\bildes\\back.jpg"));
+		fons.setIcon(new ImageIcon((getClass().getClassLoader().getResource("back.jpg"))));
 		fons.setBounds(-3, 0, 787, 466);
 		jautajums.add(fons);
 		

@@ -206,7 +206,7 @@ public class bokareva_tests extends JFrame {
 		
 		JLabel background = new JLabel("");
 		background.setBackground(new Color(153, 180, 209));
-		background.setIcon(new ImageIcon("C:\\Users\\nikag\\OneDrive\\Рабочий стол\\Eksamens_Bokareva\\For_tests\\bildes\\back.jpg"));
+		background.setIcon(new ImageIcon((getClass().getClassLoader().getResource("back.jpg"))));
 		background.setBounds(0, -12, 706, 466);
 		SakumaEkrans.add(background);
 		

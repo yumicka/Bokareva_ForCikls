@@ -66,6 +66,7 @@ public class rezultats extends JFrame {
 		punkti.setBounds(10, 131, 686, 42);
 		rezultats.add(punkti);
 		
+		//ja ir nepareizas atbildes
 		if(!bokareva_tests.nepar.isEmpty()) {
 		JLabel jautajumi = new JLabel("Nepareizi atbildēti jautājumi:");
 		jautajumi.setHorizontalAlignment(SwingConstants.CENTER);
@@ -86,6 +87,7 @@ public class rezultats extends JFrame {
 		saraksts.setHorizontalAlignment(SwingConstants.CENTER);
 		saraksts.setBounds(10, 204, 686, 42);
 		rezultats.add(saraksts);
+		//ja viss ir labi
 		}else {
 			JLabel izcili = new JLabel("Jūs pareizi atbildējāt uz visiem jautājumiem!");
 			izcili.setHorizontalAlignment(SwingConstants.CENTER);
@@ -123,7 +125,7 @@ public class rezultats extends JFrame {
 		
 		
 		JLabel background = new JLabel("");
-		background.setIcon(new ImageIcon("C:\\Users\\nikag\\OneDrive\\Рабочий стол\\Eksamens_Bokareva\\For_tests\\bildes\\back.jpg"));
+		background.setIcon(new ImageIcon((getClass().getClassLoader().getResource("back.jpg"))));
 		background.setBounds(-228, -16, 1200, 810);
 		rezultats.add(background);
 		

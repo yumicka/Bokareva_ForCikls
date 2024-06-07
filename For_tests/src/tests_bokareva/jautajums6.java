@@ -55,7 +55,7 @@ public class jautajums6 extends JFrame {
 		jautajums6.add(teksts2);
 		
 		JLabel bilde = new JLabel("");
-		bilde.setIcon(new ImageIcon("C:\\Users\\nikag\\OneDrive\\Рабочий стол\\Eksamens_Bokareva\\For_tests\\bildes\\kods.png"));
+		bilde.setIcon(new ImageIcon((getClass().getClassLoader().getResource("kods.png"))));
 		bilde.setBounds(202, 113, 318, 129);
 		jautajums6.add(bilde);
 		
@@ -149,7 +149,7 @@ public class jautajums6 extends JFrame {
 		jautajums6.add(pogaAtb);
 		
 		JLabel background = new JLabel("");
-		background.setIcon(new ImageIcon("C:\\Users\\nikag\\OneDrive\\Рабочий стол\\Eksamens_Bokareva\\For_tests\\bildes\\back.jpg"));
+		background.setIcon(new ImageIcon((getClass().getClassLoader().getResource("back.jpg"))));
 		background.setBounds(-228, -16, 1200, 810);
 		jautajums6.add(background);
 		

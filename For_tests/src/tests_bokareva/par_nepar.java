@@ -93,7 +93,6 @@ public class par_nepar extends JFrame {
 			break;
 			
 		default:
-			//System.out.print(bokareva_tests.jautNum+"\n"+bokareva_tests.nepar+"\n"+bokareva_tests.punkti);
 			rezultats.Rezultats();
 			break;
 		}
@@ -117,7 +116,7 @@ public class par_nepar extends JFrame {
 			ekrans.add(teksts);
 			
 			JLabel pareizi = new JLabel("");
-			pareizi.setIcon(new ImageIcon("C:\\Users\\nikag\\OneDrive\\Рабочий стол\\Eksamens_Bokareva\\For_tests\\bildes\\pareizais.png"));
+			pareizi.setIcon(new ImageIcon((getClass().getClassLoader().getResource("pareizais.png"))));
 			pareizi.setBounds(32, 136, 224, 246);
 			ekrans.add(pareizi);
 			
@@ -144,14 +143,14 @@ public class par_nepar extends JFrame {
 			});
 
 			JLabel background = new JLabel("");
-			background.setIcon(new ImageIcon("C:\\Users\\nikag\\OneDrive\\Рабочий стол\\Eksamens_Bokareva\\For_tests\\bildes\\back.jpg"));
+			background.setIcon(new ImageIcon((getClass().getClassLoader().getResource("back.jpg"))));
 			background.setBounds(0, 0, 716, 443);
 			ekrans.add(background);
 			
 		}else if(jautajumi.getRezult() == false) {
-			
+			//nepareizi
 			JLabel nepar_bilde = new JLabel("");
-			nepar_bilde.setIcon(new ImageIcon("C:\\Users\\nikag\\OneDrive\\Рабочий стол\\Eksamens_Bokareva\\For_tests\\bildes\\nepareizi2.png"));
+			nepar_bilde.setIcon(new ImageIcon((getClass().getClassLoader().getResource("nepareizi2.png"))));
 			nepar_bilde.setBounds(64, 208, 183, 190);
 			ekrans.add(nepar_bilde);
 
@@ -183,7 +182,7 @@ public class par_nepar extends JFrame {
 			});
 			
 			JLabel background = new JLabel("");
-			background.setIcon(new ImageIcon("C:\\Users\\nikag\\OneDrive\\Рабочий стол\\Eksamens_Bokareva\\For_tests\\bildes\\back.jpg"));
+			background.setIcon(new ImageIcon((getClass().getClassLoader().getResource("back.jpg"))));
 			background.setBounds(0, 0, 716, 443);
 			ekrans.add(background);
 
