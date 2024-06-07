@@ -69,24 +69,30 @@ public class rezultats extends JFrame {
 		jautajumi.setBounds(213, 167, 294, 41);
 		rezultats.add(jautajumi);
 		
+		
+		String str = "";
+		int ped = bokareva_tests.nepar.get(bokareva_tests.nepar.size()-1);
+		for(int i = 0; i<bokareva_tests.nepar.size(); i++) {
+			if(i != ped)
+				str += bokareva_tests.nepar.get(i)+", ";
+			else
+				str += bokareva_tests.nepar.get(i)+".";
+		}
+		
+		JLabel saraksts = new JLabel(str);
+		saraksts.setBackground(new Color(240, 240, 240));
+		saraksts.setFont(new Font("Segoe UI Semibold", Font.PLAIN, 20));
+		saraksts.setForeground(new Color(255, 255, 255));
+		saraksts.setHorizontalAlignment(SwingConstants.CENTER);
+		saraksts.setBounds(10, 204, 686, 42);
+		rezultats.add(saraksts);
+	
 		JLabel background = new JLabel("");
 		background.setIcon(new ImageIcon("C:\\Users\\nikag\\OneDrive\\Рабочий стол\\Eksamens_Bokareva\\For_tests\\bildes\\back.jpg"));
 		background.setBounds(-228, -16, 1200, 810);
 		rezultats.add(background);
 		
-		String str = "";
-		for(int i : bokareva_tests.nepar) {
-			if(i != bokareva_tests.nepar.size()-1)
-				str += i+", ";
-			else
-				str += i+".";
-		}
-	
-		
-		JLabel saraksts = new JLabel(str);
-		saraksts.setHorizontalAlignment(SwingConstants.CENTER);
-		saraksts.setBounds(10, 204, 686, 42);
-		rezultats.add(saraksts);
+
 		
 		
 		
