@@ -1,11 +1,6 @@
 package tests_bokareva;
 
-import java.awt.Color;
 import java.awt.EventQueue;
-import java.awt.Font;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.util.ArrayList;
 
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
@@ -14,16 +9,22 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
+import java.awt.Font;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.util.ArrayList;
+import java.awt.Color;
 
-public class jautajums6 extends JFrame {
+public class jautajums10 extends JFrame {
 
 	private static final long serialVersionUID = 1L;
-	private JPanel jautajums6;
-	public static void Jautajums6() {
+	private JPanel jautajums10;
+
+	public static void Jautajums10() {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					jautajums6 frame = new jautajums6();
+					jautajums10 frame = new jautajums10();
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -32,66 +33,60 @@ public class jautajums6 extends JFrame {
 		});
 	}
 
-
-	public jautajums6() {
+	public jautajums10() {
 		setTitle("Tests par For ciklu");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 720, 480);
-		jautajums6 = new JPanel();
-		jautajums6.setBorder(new EmptyBorder(5, 5, 5, 5));
-		setContentPane(jautajums6);
-		jautajums6.setLayout(null);
+		jautajums10 = new JPanel();
+		jautajums10.setBorder(new EmptyBorder(5, 5, 5, 5));
+		setContentPane(jautajums10);
+		getContentPane().setLayout(null);
+		jautajums10.setLayout(null);
 		
-		JLabel teksts1 = new JLabel("6) Kādi elementi tiek parādīti ekrānā");
-		teksts1.setForeground(new Color(255, 255, 255));
-		teksts1.setFont(new Font("Segoe UI Semibold", Font.PLAIN, 25));
-		teksts1.setBounds(148, 41, 435, 34);
-		jautajums6.add(teksts1);
+		JLabel jaut = new JLabel("10) Kuras masīva rindas apstrādā cikls ciklā ārējā daļa");
+		jaut.setForeground(new Color(255, 255, 255));
+		jaut.setFont(new Font("Segoe UI Semibold", Font.PLAIN, 25));
+		jaut.setBounds(55, 62, 610, 34);
+		jautajums10.add(jaut);
 		
-		JLabel teksts2 = new JLabel("pēc programmas palaišanas?");
-		teksts2.setForeground(new Color(255, 255, 255));
-		teksts2.setFont(new Font("Segoe UI Semibold", Font.PLAIN, 25));
-		teksts2.setBounds(191, 70, 335, 40);
-		jautajums6.add(teksts2);
+		JLabel jaut1 = new JLabel("un cikls ciklā iekšējā daļa?");
+		jaut1.setFont(new Font("Segoe UI Semibold", Font.PLAIN, 25));
+		jaut1.setForeground(new Color(255, 255, 255));
+		jaut1.setBounds(204, 94, 310, 39);
+		jautajums10.add(jaut1);
 		
-		JLabel bilde = new JLabel("");
-		bilde.setIcon(new ImageIcon("C:\\Users\\nikag\\OneDrive\\Рабочий стол\\Eksamens_Bokareva\\For_tests\\bildes\\kods.png"));
-		bilde.setBounds(202, 113, 318, 129);
-		jautajums6.add(bilde);
-		
-		JCheckBox atb1 = new JCheckBox("1");
+		JCheckBox atb1 = new JCheckBox("Ārēja dāļa apstrada masīva kolonnus");
 		atb1.setForeground(new Color(0, 0, 0));
 		atb1.setOpaque(false);
 		atb1.setFont(new Font("Segoe UI Semibold", Font.PLAIN, 20));
-		atb1.setBounds(212, 248, 53, 35);
-		jautajums6.add(atb1);
+		atb1.setBounds(77, 168, 579, 35);
+		jautajums10.add(atb1);
 		
-		JCheckBox atb2 = new JCheckBox("5");
+		JCheckBox atb2 = new JCheckBox("Ārēja dāļa apstrada masīva rindus");
 		atb2.setForeground(new Color(0, 0, 0));
 		atb2.setOpaque(false);
 		atb2.setFont(new Font("Segoe UI Semibold", Font.PLAIN, 20));
-		atb2.setBounds(283, 248, 44, 35);
-		jautajums6.add(atb2);
+		atb2.setBounds(77, 205, 590, 35);
+		jautajums10.add(atb2);
 		
-		JCheckBox atb3 = new JCheckBox("9");
+		JCheckBox atb3 = new JCheckBox("Iekšējā dāļa apstrada masīva kolonnus");
 		atb3.setForeground(new Color(0, 0, 0));
 		atb3.setOpaque(false);
 		atb3.setFont(new Font("Segoe UI Semibold", Font.PLAIN, 20));
-		atb3.setBounds(360, 248, 53, 35);
-		jautajums6.add(atb3);
+		atb3.setBounds(77, 242, 579, 35);
+		jautajums10.add(atb3);
 		
-		JCheckBox atb4 = new JCheckBox("13");
+		JCheckBox atb4 = new JCheckBox("Iekšējā dāļa apstrada masīva rindus");
 		atb4.setForeground(new Color(0, 0, 0));
 		atb4.setOpaque(false);
 		atb4.setFont(new Font("Segoe UI Semibold", Font.PLAIN, 20));
-		atb4.setBounds(439, 248, 53, 35);
-		jautajums6.add(atb4);
-		
+		atb4.setBounds(77, 279, 579, 35);
+		jautajums10.add(atb4);
 		
 		ArrayList<Boolean> izvele = new ArrayList<Boolean>();
 		ArrayList<Boolean> pareiz = new ArrayList<Boolean>();
 		
-		pareiz.add(true);
+		pareiz.add(false);
 		pareiz.add(true);
 		pareiz.add(true);
 		pareiz.add(false);
@@ -136,24 +131,20 @@ public class jautajums6 extends JFrame {
 						bokareva_tests.punkti-=1;
 					else {
 						bokareva_tests.punkti=0;
-						bokareva_tests.nepar.add(6);
+						bokareva_tests.nepar.add(10);
 					}
 				}
 			}
-			
 		});
-		pogaAtb.setForeground(new Color(0, 128, 128));
-		pogaAtb.setFont(new Font("Segoe UI Semibold", Font.PLAIN, 20));
-		pogaAtb.setBounds(276, 318, 175, 45);
-		jautajums6.add(pogaAtb);
-		
-		JLabel background = new JLabel("");
-		background.setIcon(new ImageIcon("C:\\Users\\nikag\\OneDrive\\Рабочий стол\\Eksamens_Bokareva\\For_tests\\bildes\\back.jpg"));
-		background.setBounds(-228, -16, 1200, 810);
-		jautajums6.add(background);
-		
-		
-		
-		
-	}
+	pogaAtb.setForeground(new Color(0, 128, 128));
+	pogaAtb.setFont(new Font("Segoe UI Semibold", Font.PLAIN, 20));
+	pogaAtb.setBounds(269, 334, 175, 45);
+	jautajums10.add(pogaAtb);
+	
+	JLabel background = new JLabel("");
+	background.setIcon(new ImageIcon("C:\\Users\\nikag\\OneDrive\\Рабочий стол\\Eksamens_Bokareva\\For_tests\\bildes\\back.jpg"));
+	background.setBounds(-228, -16, 1200, 810);
+	jautajums10.add(background);
+	
+	}	
 }

@@ -87,6 +87,15 @@ public class par_nepar extends JFrame {
 			ArrayList<Boolean> atbildes9 = ((Jautajums)bokareva_tests.jautajumiki.get(6)).getAtbildes();
 			Metode.Jautajums(nosaukums9, varianti9, atbildes9);
 			break;
+			
+		case 10:
+			jautajums10.Jautajums10();
+			break;
+			
+		default:
+			//System.out.print(bokareva_tests.jautNum+"\n"+bokareva_tests.nepar+"\n"+bokareva_tests.punkti);
+			rezultats.Rezultats();
+			break;
 		}
 	}
 

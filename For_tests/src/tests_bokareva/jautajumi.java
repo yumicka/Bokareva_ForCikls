@@ -36,6 +36,7 @@ public class jautajumi extends JFrame {
 	
 	public jautajumi() {
 		
+		setTitle("Tests par For ciklu");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 720, 480);
 		jautajums = new JPanel();
@@ -130,9 +131,10 @@ public class jautajumi extends JFrame {
 					par_nepar.Pareizais();
 					if(bokareva_tests.punkti != 0)
 						bokareva_tests.punkti-=1;
-					else
+					else {
 						bokareva_tests.punkti=0;
-					bokareva_tests.nepar.add(1);
+						bokareva_tests.nepar.add(1);
+					}
 				}
 				
 			}

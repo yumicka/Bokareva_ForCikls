@@ -121,8 +121,10 @@ public class Metode extends JFrame {
 					par_nepar.Pareizais();
 					if(bokareva_tests.punkti != 0)
 						bokareva_tests.punkti-=1;
-					else
+					else {
 						bokareva_tests.punkti=0;
+						bokareva_tests.nepar.add(bokareva_tests.jautNum);
+					}
 				}
 			}
 		});

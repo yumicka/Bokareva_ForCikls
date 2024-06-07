@@ -18,7 +18,10 @@ import java.awt.event.ActionEvent;
 
 public class bokareva_tests extends JFrame {
 	private static final long serialVersionUID = 1L;
+	
+	//nepareizie atbildes
 	public static ArrayList<Integer> nepar = new ArrayList<>();
+	
 	public static int punkti = 0;
 	private JPanel SakumaEkrans;
 	public static int jautNum = 1;
