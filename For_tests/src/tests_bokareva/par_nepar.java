@@ -100,6 +100,7 @@ public class par_nepar extends JFrame {
 
 	//frame
 	public par_nepar() {
+		setTitle("Atbildes novērtējums");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 720, 480);
 		ekrans = new JPanel();
@@ -122,7 +123,7 @@ public class par_nepar extends JFrame {
 			
 			JLabel punkti = new JLabel("+2 punkti");
 			punkti.setForeground(new Color(152, 251, 152));
-			punkti.setFont(new Font("Segoe UI Symbol", Font.BOLD, 40));
+			punkti.setFont(new Font("Segoe UI Semibold", Font.BOLD, 40));
 			punkti.setBounds(265, 221, 196, 49);
 			ekrans.add(punkti);
 			
@@ -160,9 +161,9 @@ public class par_nepar extends JFrame {
 			nepareizi.setBounds(265, 118, 262, 63);
 			ekrans.add(nepareizi);
 			
-			JLabel punkti = new JLabel("-1 punkti");
+			JLabel punkti = new JLabel("-1 punkts");
 			punkti.setForeground(new Color(255, 0, 0));
-			punkti.setFont(new Font("Segoe UI Symbol", Font.BOLD, 40));
+			punkti.setFont(new Font("Segoe UI Semibold", Font.BOLD, 40));
 			punkti.setBounds(265, 221, 196, 49);
 			ekrans.add(punkti);
 			

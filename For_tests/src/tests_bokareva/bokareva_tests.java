@@ -14,6 +14,7 @@ import javax.swing.SwingConstants;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
 import java.awt.event.ActionEvent;
+import java.awt.Toolkit;
 
 
 public class bokareva_tests extends JFrame {
